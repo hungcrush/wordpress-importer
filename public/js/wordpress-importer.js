@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 51);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -220,14 +220,26 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ 51:
-/*!*********************************************************************************************!*\
-  !*** multi ./platform/plugins/wordpress-importer/resources/assets/js/wordpress-importer.js ***!
-  \*********************************************************************************************/
+/***/ "./platform/plugins/wordpress-importer/resources/assets/scss/wordpress-importer.scss":
+/*!*******************************************************************************************!*\
+  !*** ./platform/plugins/wordpress-importer/resources/assets/scss/wordpress-importer.scss ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 0:
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** multi ./platform/plugins/wordpress-importer/resources/assets/js/wordpress-importer.js ./platform/plugins/wordpress-importer/resources/assets/scss/wordpress-importer.scss ***!
+  \*********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/mac/workspace/cms/platform/plugins/wordpress-importer/resources/assets/js/wordpress-importer.js */"./platform/plugins/wordpress-importer/resources/assets/js/wordpress-importer.js");
+__webpack_require__(/*! /Volumes/HarrySpace/gits/cms2/platform/plugins/wordpress-importer/resources/assets/js/wordpress-importer.js */"./platform/plugins/wordpress-importer/resources/assets/js/wordpress-importer.js");
+module.exports = __webpack_require__(/*! /Volumes/HarrySpace/gits/cms2/platform/plugins/wordpress-importer/resources/assets/scss/wordpress-importer.scss */"./platform/plugins/wordpress-importer/resources/assets/scss/wordpress-importer.scss");
 
 
 /***/ })

@@ -1,7 +1,7 @@
 @extends('core/base::layouts.master')
 
 @section('content')
-    <div class="card">
+    <div class="card" style="width: 80%;margin: auto">
         <div class="card-body">
             <div class="wordpress-importer">
                 <h1 class="page-title">{{ __('Wordpress Importer') }}</h1>
@@ -9,14 +9,16 @@
                 <form method="POST" action="{{ route('wordpress-importer') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12 col-lg-12 col-xl-6">
                             <h6>{{ __('Options') }}</h6>
+                            {{--Tags images--}}
                             <div class="form-group">
                                 <label for="copyimages" class="control-label">{{ __('Copy Images?') }}</label>
                                 {{ Form::onOff('copyimages', true)  }}
                                 <small class="text-muted d-block">{{ __('Featured images for posts and pages will be copied over to your storage. If you select "No" the image references will remain the same and no images will be copied.') }}</small>
                             </div>
 
+                            {{--Tags categories--}}
                             <div class="form-group">
                                 <label for="copy_categories" class="control-label">{{ __('Copy Categories?') }}</label>
                                 {{ Form::onOff('copy_categories', true)  }}
@@ -34,9 +36,23 @@
                                 </div>
                             </div>
 
+                            {{--Tags copy--}}
+                            <div class="form-group">
+                                <label for="copy_categories" class="control-label">{{ __('Copy Tags?') }}</label>
+                                {{ Form::onOff('copy_tags', true)  }}
+                                <small class="text-muted d-block">{{ __('Tags for posts will be copied.') }}</small>
+                            </div>
+
+                            {{--Authors copy--}}
+                            <div class="form-group">
+                                <label for="copy_categories" class="control-label">{{ __('Copy Authors?') }}</label>
+                                {{ Form::onOff('copy_authors', true)  }}
+                                <small class="text-muted d-block">{{ __('The authors of the posts will be copied, if you uncheck author will be current user login.') }}</small>
+                            </div>
+
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12 col-lg-12 col-xl-6">
                             <h6>{{ __('Upload your Wordpress XML export file below and click on Import.') }}</h6>
                             <div class="form-group">
                                 <label for="timeout" class="control-label" data-toggle="tooltip"
